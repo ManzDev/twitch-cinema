@@ -8,7 +8,9 @@ class CinemaTop extends HTMLElement {
     return /* css */`
       :host {
         display: block;
-        background: black;
+        background: url("images/manzdev.png");
+        background-size: cover;
+        image-rendering: pixelated;
         width: 200px;
         height: 100px;
       }

@@ -2,6 +2,8 @@ import "./CinemaRoof.js";
 import "./CinemaBillboard.js";
 import "./CinemaEntrance.js";
 import "./CinemaTop.js";
+import "./CinemaTicketStore.js";
+import "./SpotLight.js";
 
 class CinemaBuilding extends HTMLElement {
   constructor() {
@@ -17,6 +19,10 @@ class CinemaBuilding extends HTMLElement {
         --cinema-roof-height: 50px; /* calc(var(--width) / 12); */
         --cinema-billboard-height: 110px; /* calc(var(--width) / 5.45); */
         --cinema-entrance-height: 125px; /* calc(var(--width) / 5.25); */
+
+        display: grid;
+        grid-template-columns: var(--width) 100px;
+        align-items: end;
       }
 
       .container {
@@ -33,6 +39,16 @@ class CinemaBuilding extends HTMLElement {
         display: grid;
         justify-content: center;
       }
+
+      spot-light {
+        position: absolute;
+        translate: 45px 0;
+        z-index: 5;
+      }
+
+      spot-light[right] {
+        translate: 525px 0;
+      }
     `;
   }
 
@@ -43,6 +59,7 @@ class CinemaBuilding extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = /* html */`
     <style>${CinemaBuilding.styles}</style>
+    <spot-light></spot-light>
     <div class="container">
       <div class="top-container">
         <cinema-top></cinema-top>
@@ -56,7 +73,10 @@ class CinemaBuilding extends HTMLElement {
       <div class="entrance-container">
         <cinema-entrance></cinema-entrance>
       </div>
-    </div>`;
+    </div>
+    <spot-light right></spot-light>
+    <cinema-ticket-store></cinema-ticket-store>
+    `;
   }
 }
 

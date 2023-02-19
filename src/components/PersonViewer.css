@@ -1,0 +1,298 @@
+/* Autor: the_sandok */
+.naked {
+  background:
+    linear-gradient(
+      to bottom,
+      #000 8%,
+      #cb9661 9% 30%,
+      #f2c30f 31% 33%,
+      #cb9661 34% 60%,
+      #7e8c8d 61% 64%,
+      #fff 65% 79%,
+      #cb9661 80% 94%,
+      #6e4111 95%
+    );
+}
+
+.prisoner {
+  background:
+    linear-gradient(
+      to bottom,
+      #6e4111 2%,
+      #cb9661 3% 28%,
+      #fff 29% 35%,
+      #000 36% 42%,
+      #fff 43% 49%,
+      #000 50% 56%,
+      #fff 57% 63%,
+      #000 64% 70%,
+      #fff 71% 77%,
+      #000 78% 85%,
+      #fff 86% 92%,
+      #1a2f35 93%
+    );
+}
+
+.child {
+  background:
+    linear-gradient(
+      to bottom,
+      transparent 30%,
+      #813b15 31% 38%,
+      #cb9661 39% 55%,
+      #f1c20c 56% 70%,
+      #1689ff 71% 82%,
+      #cb9661 83% 89%,
+      #fff 90% 94%,
+      #000 95%
+    );
+}
+
+.superman {
+  background:
+    linear-gradient(
+      to bottom,
+      #813b15 6%,
+      #cb9661 7% 30%,
+      #0152b8 31% 60%,
+      #f2e506 61% 62%,
+      #cb0503 63% 72%,
+      #0152b8 73% 90%,
+      #cb0503 91%
+    );
+}
+
+.wednesday {
+  background:
+    linear-gradient(
+      to bottom,
+      #000 17%,
+      #cb9661 18% 30%,
+      #fff 31% 33%,
+      #000 34% 82%,
+      #cb9661 83% 89%,
+      #fff 90% 94%,
+      #000 95%
+    );
+}
+
+.goose {
+  background:
+    linear-gradient(
+      to bottom,
+      transparent 50%,
+      #d8d3c4 51% 59%,
+      #e96522 60% 64%,
+      #d8d3c4 65% 94%,
+      #e96522 95%
+    );
+}
+
+/* Autor: davidd */
+.sport1 {
+  background:
+    linear-gradient(
+      to bottom,
+      #242726 5%,
+      #f7be81 6% 25%,
+      #fff 26% 60%,
+      #000 61% 90%,
+      #f00 91%
+    );
+}
+
+/* Autor: dhardysd */
+.krillin {
+  background:
+    linear-gradient(
+      to bottom,
+      #f2cddb 6% 25%,
+      #ed5420 26% 55%,
+      #184aef 26% 60%,
+      #ed5420 61% 90%,
+      #184aef 91%
+    );
+}
+
+.homer {
+  background:
+    linear-gradient(
+      to bottom,
+      #f0d101 10% 25%,
+      #f2f2f2 30% 55%,
+      #f0d101 26% 60%,
+      #6ac6f1 63% 90%,
+      #6c697b 91%
+    );
+}
+
+.shaggy {
+  background:
+    linear-gradient(
+      to bottom,
+      #e59e3e 10%,
+      #f2d1c3 10% 25%,
+      #8eb25e 30% 65%,
+      #a33f35 63% 90%,
+      #435155 91%
+    );
+}
+
+.plomo {
+  background:
+    linear-gradient(
+      to bottom,
+      #b9bab2 10%,
+      #d2b1a2 10% 25%,
+      #232125 30% 65%,
+      #546771 63% 90%,
+      #d4d4d4 91%
+    );
+}
+
+.blonde {
+  background:
+    linear-gradient(
+      to bottom,
+      #fffa15 0%,
+      #fcdcfa 20% 35%,
+      #000 0% 50%,
+      #fcdcfa 0% 60%,
+      #000 55% 70%,
+      #fcdcfa 5% 85%,
+      #d32423 0% 95%
+    );
+}
+
+/* Author: nayuhi */
+.sailor-moon {
+  background:
+    linear-gradient(
+      to bottom,
+      #fde024 10%,
+      #fce3cd 10% 25%,
+      #fd3653 25% 25.5%,
+      #fce3cd 10% 28%,
+      #3e499b 28% 34%,
+      #fd3653 34% 40%,
+      #f2f2f2 41% 55%,
+      #3e499b 26% 66%,
+      #fce3cd 65% 84%,
+      #fd3653 85%
+    );
+}
+
+.sailor-marte {
+  background:
+    linear-gradient(
+      to bottom,
+      #000 10%,
+      #fce3cd 10% 25%,
+      #d84631 25% 25.5%,
+      #fce3cd 10% 28%,
+      #d84631 28% 34%,
+      #362763 34% 40%,
+      #f2f2f2 41% 55%,
+      #d84631 26% 66%,
+      #fce3cd 65% 92%,
+      #d84631 92%
+    );
+}
+
+.sailor-jupiter {
+  background:
+    linear-gradient(
+      to bottom,
+      #5e3c1b 10%,
+      #fce3cd 10% 25%,
+      #73ab33 25% 25.5%,
+      #fce3cd 10% 28%,
+      #73ab33 28% 34%,
+      #de8dc5 34% 40%,
+      #f2f2f2 41% 55%,
+      #73ab33 26% 66%,
+      #fce3cd 65% 84%,
+      #73ab33 85%
+    );
+}
+
+.sailor-mercurio {
+  background:
+    linear-gradient(
+      to bottom,
+      #486361 10%,
+      #fce3cd 10% 25%,
+      #7da0db 25% 25.5%,
+      #fce3cd 10% 28%,
+      #7da0db 28% 34%,
+      #cde2f9 34% 40%,
+      #f2f2f2 41% 55%,
+      #7da0db 26% 66%,
+      #fce3cd 65% 84%,
+      #7da0db 85%
+    );
+}
+
+.sailor-venus {
+  background:
+    linear-gradient(
+      to bottom,
+      #fde024 10%,
+      #fce3cd 10% 25%,
+      #e19136 25% 25.5%,
+      #fce3cd 10% 28%,
+      #e19136 28% 34%,
+      #362763 34% 40%,
+      #f2f2f2 41% 55%,
+      #e19136 26% 66%,
+      #fce3cd 65% 88%,
+      #e19136 88% 90%,
+      #fce3cd 65% 92%,
+      #e19136 92%
+    );
+}
+
+/* Autor: Chrisvdev */
+.chrisvdev {
+  background:
+    linear-gradient(
+      to bottom,
+      #ce8f8a 25%,
+      #292f31 26% 60%,
+      #2b5566 61% 90%,
+      #3b1e07 91%
+    );
+}
+
+.ghost {
+  background:
+    linear-gradient(
+      to bottom,
+      rgb(240 240 240 / 100%) 0%,
+      rgb(187 187 187 / 50%) 65%,
+      rgb(103 103 103 / 10%) 100%
+    );
+}
+
+/* Autor: GariCarandai */
+.mike {
+  background:
+    linear-gradient(
+      to bottom,
+      transparent 65%,
+      #a7da3d 66%
+    );
+}
+
+/* Autor: Enrique */
+.moda {
+  background:
+    linear-gradient(
+      to bottom,
+      #303018 0%,
+      #fcdcfa 10% 35%,
+      #241e24 35% 60%,
+      #000 55% 85%,
+      #f0f7f7 0% 95%
+    );
+}

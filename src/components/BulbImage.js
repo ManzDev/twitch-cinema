@@ -31,6 +31,19 @@ class BulbImage extends HTMLElement {
     this.toggleAttribute("on");
   }
 
+  blink(time) {
+    this.setAttribute("on", "");
+    setTimeout(() => this.off(), time);
+  }
+
+  on() {
+    this.setAttribute("on", "");
+  }
+
+  off() {
+    this.removeAttribute("on");
+  }
+
   connectedCallback() {
     this.render();
     this.addEventListener("click", () => this.toggle());
