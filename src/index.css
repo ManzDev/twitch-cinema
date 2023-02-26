@@ -12,6 +12,20 @@
     url("fonts/the-bold.woff") format("woff");
 }
 
+@font-face {
+  font-family: Superstar;
+  src:
+    url("fonts/superstar.woff2") format("woff2"),
+    url("fonts/superstar.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Free Pixel";
+  src:
+    url("fonts/free-pixel.woff2") format("woff2"),
+    url("fonts/free-pixel.woff") format("woff");
+}
+
 body {
   background: #223;
   overflow: hidden;
@@ -19,6 +33,16 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
   align-items: end;
-  translate: 200px 0;
+  translate: -400px 0;
+}
+
+cinema-ticket {
+  translate: -75px 0;
+}
+
+.cinema-queue {
+  display: flex;
 }

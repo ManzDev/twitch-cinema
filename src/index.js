@@ -1,7 +1,9 @@
 import "./components/CinemaBuilding.js";
 import "./components/PersonViewer.js";
+import "./components/CinemaTicket.js";
 
 const container = document.querySelector(".container");
+const cinemaQueue = document.querySelector(".cinema-queue");
 
 const personList = new Set();
 
@@ -12,7 +14,6 @@ const client = new tmi.Client({
 client.connect();
 
 client.on("message", (channel, tags, message, self) => {
-
   const username = tags.username;
   const color = tags.color || "#00000077";
   const isNewUser = message === "!ticket"; // message.startsWith("!ticket");
@@ -22,8 +23,7 @@ client.on("message", (channel, tags, message, self) => {
     const user = document.createElement("person-viewer");
     user.setAttribute("username", username);
     user.setAttribute("color", color);
-    container.insertAdjacentElement("beforeend", user);
+    cinemaQueue.insertAdjacentElement("beforeend", user);
     personList.add(username);
   }
-
 });

@@ -21,7 +21,12 @@ const SKINS = [
   "moda",
   "mike",
   "goose",
-  "ghost"
+  "ghost",
+  "police",
+  "joker",
+  "security",
+  "sheldon-doppler",
+  "hulk"
 ];
 
 class PersonViewer extends HTMLElement {
@@ -39,12 +44,17 @@ class PersonViewer extends HTMLElement {
 
   static get styles() {
     return /* css */`
+      :host {
+      }
+
       .person-container {
         width: 40px;
-        height: 100px;
+        height: 175px;
         margin: 0 0.5em;
         position: relative;
-        translate: 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
       }
 
       .person {
@@ -62,7 +72,7 @@ class PersonViewer extends HTMLElement {
         animation:
           jump 0.3s infinite steps(3) alternate var(--delay-jump-time, 0s),
           rotate 0.4s infinite steps(9) alternate var(--delay-rotate-time, 0s);
-        position: absolute;
+        /*position: absolute;*/
       }
 
       .username {

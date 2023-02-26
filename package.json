@@ -28,5 +28,8 @@
     "vite": "^4.1.0"
   },
   "keywords": [],
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "qrcode-esm": "^1.5.1"
+  }
 }

@@ -296,3 +296,77 @@
       #f0f7f7 0% 95%
     );
 }
+
+.police {
+  background:
+    linear-gradient(
+      to bottom,
+      #041643 0% 10%,
+      #6c6a15 11% 13%,
+      #fcdcfa 14% 35%,
+      #041643 35% 60%,
+      #000 61% 63%,
+      #041643 55% 85%,
+      #000 0% 95%
+    );
+}
+
+.security {
+  width: 40px;
+  height: 95px;
+  background:
+    linear-gradient(
+      to bottom,
+      #cca356 0% 35%,
+      #fcf60a 35% 60%,
+      #141413 61% 85%,
+      #000 0% 95%
+    );
+}
+
+/* Autor: Gordon_F */
+.joker {
+  background:
+    linear-gradient(
+      to bottom,
+      #538f1c 5%,
+      #ffff 6% 18%,
+      #e50914 19% 22%,
+      #ffff 23% 25%,
+      #511847 26% 58%,
+      #3b1e07 59% 60%,
+      #511847 61% 90%,
+      #3b1e07 91%
+    );
+}
+
+.sheldon-doppler {
+  background:
+    linear-gradient(
+      to right,
+      #000 4%,
+      #ffff 5% 10%,
+      #000 11% 19%,
+      #ffff 20% 29%,
+      #000 30% 41%,
+      #ffff 42% 59%,
+      #000 60% 71%,
+      #ffff 72% 81%,
+      #000 82% 90%,
+      #ffff 91% 96%,
+      #000 100%
+    );
+}
+
+.hulk {
+  width: 50px;
+  height: 115px;
+  background:
+    linear-gradient(
+      to bottom,
+      #391f07 5%,
+      #23830e 6% 61%,
+      #895508 62% 80%,
+      #198908 90%
+    );
+}
