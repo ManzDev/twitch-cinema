@@ -13,8 +13,8 @@ const SCHEDULES = [
 ];
 
 const PRICES = [
-  "$ (Oferta Junior)",
-  "4 (Precio Senior)"
+  "$10 (Oferta Junior)",
+  "$18 (Precio Senior)"
 ];
 
 const getRandomNumber = (max) => Math.floor(Math.random() * max);
@@ -125,8 +125,8 @@ class CinemaTicket extends HTMLElement {
     const randomMovieIndex = getRandomNumber(movies.length);
     this.movie = movies[randomMovieIndex];
 
-    this.screenNumber = String(getRandomNumber(SCREENS_TOTAL)).padStart(2, "0");
-    this.seatNumber = getRandomNumber(SEATS_TOTAL);
+    this.screenNumber = String(1 + getRandomNumber(SCREENS_TOTAL)).padStart(2, "0");
+    this.seatNumber = 1 + getRandomNumber(SEATS_TOTAL);
 
     const randomScheduleIndex = getRandomNumber(SCHEDULES.length);
     this.schedule = SCHEDULES[randomScheduleIndex];
@@ -168,7 +168,7 @@ class CinemaTicket extends HTMLElement {
             <li>FECHA: <span>${this.date.day}</span>/<span>${this.date.month}</span>/<span>${this.date.year}</span> HORA: <span>${this.schedule}</span></li>
             <li>SALA: <span>${this.screenNumber}</span> <span class="sep"></span>ASIENTO: <span>${this.seatNumber}</span></li>
             <li>STREAMER: <span>${this.streamer}</span></li>
-            <li class="price">PRECIO: <span>$ ${this.price}</span></li>
+            <li class="price">PRECIO: <span>${this.price}</span></li>
           </ul>
         </div>
         <img class="manz" src="images/manzdev.png" alt="ManzDev">
