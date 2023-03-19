@@ -370,3 +370,167 @@
       #198908 90%
     );
 }
+
+/* Tortugas ninja (maxi83c) */
+.leonardo {
+  background:
+    linear-gradient(
+      to bottom,
+      #4ea54f 0% 5%,
+      #0081bf 5% 10%,
+      #4ea54f 10% 20%,
+      transparent 20% 45%,
+      #624242 45% 50%,
+      transparent 50% 65%,
+      #4ea54f 65% 80%,
+      #0081bf 80% 85%,
+      #4ea54f 85% 100%
+    ),
+    linear-gradient(
+      to right,
+      #bc7200 0 15%,
+      #4ea54f 16% 50%,
+      #4b4217 11%
+    );
+}
+
+.michelangelo {
+  background:
+    linear-gradient(
+      to bottom,
+      #4ea54f 0% 5%,
+      #e08022 5% 10%,
+      #4ea54f 10% 20%,
+      transparent 20% 45%,
+      #624242 45% 50%,
+      transparent 50% 65%,
+      #4ea54f 65% 80%,
+      #e08022 80% 85%,
+      #4ea54f 85% 100%
+    ),
+    linear-gradient(
+      to right,
+      #bc7200 0 15%,
+      #4ea54f 16% 50%,
+      #4b4217 11%
+    );
+}
+
+.donatello {
+  background:
+    linear-gradient(
+      to bottom,
+      #4ea54f 0% 5%,
+      #5b2375 5% 10%,
+      #4ea54f 10% 20%,
+      transparent 20% 45%,
+      #624242 45% 50%,
+      transparent 50% 65%,
+      #4ea54f 65% 80%,
+      #5b2375 80% 85%,
+      #4ea54f 85% 100%
+    ),
+    linear-gradient(
+      to right,
+      #bc7200 0 15%,
+      #4ea54f 16% 50%,
+      #4b4217 11%
+    );
+}
+
+.raphael {
+  background:
+    linear-gradient(
+      to bottom,
+      #4ea54f 0% 5%,
+      #d51b1e 5% 10%,
+      #4ea54f 10% 20%,
+      transparent 20% 45%,
+      #624242 45% 50%,
+      transparent 50% 65%,
+      #4ea54f 65% 80%,
+      #d51b1e 80% 85%,
+      #4ea54f 85% 100%
+    ),
+    linear-gradient(
+      to right,
+      #bc7200 0 15%,
+      #4ea54f 16% 50%,
+      #4b4217 11%
+    );
+}
+
+/* (Maikcol) */
+.medieval-soldier {
+  background:
+    linear-gradient(
+      to bottom,
+      #8a939a 0% 20%,
+      transparent 20% 45%,
+      #8a939a 45% 50%,
+      #8a939a 50% 65%,
+      #442a09 65% 68%,
+      #8a939a 67% 90%,
+      #442a09 90% 100%
+    ),
+    linear-gradient(
+      to right,
+      #8a939a 0 15%,
+      #ffd9b1 16% 85%,
+      #8a939a 85% 100%
+    );
+}
+
+/* (Maxi83c) */
+.lego {
+  width: 40px;
+  height: 95px;
+  background: radial-gradient(#0003 3px, #fff9 5px, #0000 6px), blue;
+  background-size: 20px 20px;
+  box-shadow: inset 0 0 10px 2px #fff6;
+}
+
+/* (Maikcol) */
+.mario {
+  width: 25px;
+  height: 50px;
+  background:
+    linear-gradient(
+      to bottom,
+      #f00 0% 13%,
+      #ffc89e 13% 35%,
+      #f00 35% 58%,
+      #fcf8ff 58% 68%,
+      transparent 68% 75%,
+      #0026ff 75% 85%,
+      #7f3300 85% 95%
+    ),
+    linear-gradient(
+      to right,
+      #f8f804 0% 15%,
+      #0026ff 15% 100%
+    );
+}
+
+/* GariCarandai */
+.invisible-man {
+  background:
+    linear-gradient(
+      to bottom,
+      transparent 0% 15%,
+      #000 16% 19%,
+      transparent 20% 100%
+    ),
+    linear-gradient(
+      to right,
+      #fff 0% 11%,
+      transparent 12% 88%,
+      #fff 89% 100%
+    ),
+    linear-gradient(
+      to bottom,
+      #000 0% 15%,
+      transparent 16% 100%
+    );
+  mix-blend-mode: multiply;
+}

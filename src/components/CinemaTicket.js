@@ -1,6 +1,6 @@
 import QRCode from "qrcode-esm";
-import streamers from "../assets/streamers.json";
 import movies from "../assets/movies.json";
+import streamers from "../assets/streamers.json";
 
 const SCREENS_TOTAL = 20;
 const SEATS_TOTAL = 80;
@@ -30,6 +30,11 @@ class CinemaTicket extends HTMLElement {
       :host {
         --width: 600px;
         --height: calc(var(--width) * 0.38);
+
+        position: absolute;
+        top: 0;
+        translate: 520px 0px;
+        z-index: 10;
       }
 
       .ticket-container {

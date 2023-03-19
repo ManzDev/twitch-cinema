@@ -26,7 +26,15 @@ const SKINS = [
   "joker",
   "security",
   "sheldon-doppler",
-  "hulk"
+  "hulk",
+  "leonardo",
+  "donatello",
+  "michelangelo",
+  "raphael",
+  "medieval-soldier",
+  "lego",
+  "mario",
+  "invisible-man"
 ];
 
 class PersonViewer extends HTMLElement {
@@ -69,10 +77,12 @@ class PersonViewer extends HTMLElement {
             #030360 61% 90%,
             #3b1e07 91%
           );
+      }
+
+      :host(.move) .person {
         animation:
           jump 0.3s infinite steps(3) alternate var(--delay-jump-time, 0s),
           rotate 0.4s infinite steps(9) alternate var(--delay-rotate-time, 0s);
-        /*position: absolute;*/
       }
 
       .username {
@@ -113,6 +123,7 @@ class PersonViewer extends HTMLElement {
   connectedCallback() {
     this.init();
     this.render();
+    this.classList.add("move");
     // this.setHeight();
     const skinIndex = ~~(Math.random() * SKINS.length);
     const person = this.shadowRoot.querySelector(".person");

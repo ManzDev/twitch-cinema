@@ -1,9 +1,9 @@
+import "./components/BackgroundStreet.js";
 import "./components/CinemaBuilding.js";
+import "./components/CinemaQueue.js";
 import "./components/PersonViewer.js";
-import "./components/CinemaTicket.js";
 
-const container = document.querySelector(".container");
-const cinemaQueue = document.querySelector(".cinema-queue");
+const cinemaQueue = document.querySelector("cinema-queue");
 
 const personList = new Set();
 
@@ -23,7 +23,7 @@ client.on("message", (channel, tags, message, self) => {
     const user = document.createElement("person-viewer");
     user.setAttribute("username", username);
     user.setAttribute("color", color);
-    cinemaQueue.insertAdjacentElement("beforeend", user);
+    cinemaQueue.insertUser(user);
     personList.add(username);
   }
 });

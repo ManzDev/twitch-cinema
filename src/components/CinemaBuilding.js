@@ -1,9 +1,12 @@
-import "./CinemaRoof.js";
 import "./CinemaBillboard.js";
 import "./CinemaEntrance.js";
-import "./CinemaTop.js";
+import "./CinemaRoof.js";
+import "./CinemaTicket.js";
 import "./CinemaTicketStore.js";
+import "./CinemaTop.js";
 import "./SpotLight.js";
+
+const TICKET_DURATION_TIME = 5000;
 
 class CinemaBuilding extends HTMLElement {
   constructor() {
@@ -54,6 +57,37 @@ class CinemaBuilding extends HTMLElement {
 
   connectedCallback() {
     this.render();
+    document.addEventListener("SHOW_RANDOM_TICKET", () => this.showRandomTicket());
+  }
+
+  showRandomTicket() {
+    const cinemaTicket = document.createElement("cinema-ticket");
+    const container = this.shadowRoot.querySelector(".container");
+    container.insertAdjacentElement("afterend", cinemaTicket);
+
+    const keyframes = [{ opacity: 0, scale: 0.5, translate: "400px 0" }, { opacity: 1, scale: 1, translate: "400px -200px" }];
+    const options = {
+      duration: 250,
+      easing: "ease-in-out",
+      fill: "forwards"
+    };
+    cinemaTicket.animate(keyframes, options);
+    setTimeout(() => this.hideTicket(cinemaTicket), TICKET_DURATION_TIME);
+  }
+
+  hideTicket(cinemaTicket) {
+    const options = {
+      duration: 250,
+      easing: "ease-in-out",
+      fill: "forwards"
+    };
+    const { finished } = cinemaTicket.animate([{ opacity: 1 }, { opacity: 0 }], options);
+
+    finished.then(data => {
+      cinemaTicket.remove();
+      const event = new CustomEvent("USER_RANDOM_ACTION", { composed: true, bubbles: true });
+      this.dispatchEvent(event);
+    });
   }
 
   render() {
