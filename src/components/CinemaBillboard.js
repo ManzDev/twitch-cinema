@@ -118,7 +118,6 @@ class CinemaBillboard extends HTMLElement {
   connectedCallback() {
     this.render();
     this.insertBulbs();
-    // this.startBlinkEffect();
     this.startCycleEffect();
     const bulbs = [...this.shadowRoot.querySelectorAll("bulb-image")];
   }

@@ -40,6 +40,11 @@ class CinemaDoor extends HTMLElement {
         transition: all 0.5s ease;
       }
 
+      .door-2 {
+        z-index: 15;
+        position: relative;
+      }
+
       :host([open]) .door-2 {
         translate: -100% 0;
       }
@@ -53,6 +58,7 @@ class CinemaDoor extends HTMLElement {
   connectedCallback() {
     this.render();
     this.addEventListener("click", () => this.open());
+    document.addEventListener("CINEMA_DOOR_TOGGLE", () => this.open());
   }
 
   render() {

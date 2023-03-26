@@ -34,7 +34,9 @@ const SKINS = [
   "medieval-soldier",
   "lego",
   "mario",
-  "invisible-man"
+  "invisible-man",
+  "manzdev",
+  "padawanstrainer"
 ];
 
 class PersonViewer extends HTMLElement {
@@ -53,6 +55,8 @@ class PersonViewer extends HTMLElement {
   static get styles() {
     return /* css */`
       :host {
+        position: relative;
+        z-index: 10;
       }
 
       .person-container {
@@ -63,6 +67,11 @@ class PersonViewer extends HTMLElement {
         display: flex;
         flex-direction: column;
         justify-content: end;
+      }
+
+      .image {
+        position: absolute;
+        translate: -40px -250px;
       }
 
       .person {
@@ -94,6 +103,10 @@ class PersonViewer extends HTMLElement {
         text-shadow:
           0 0 5px var(--color),
           1px 1px 0 #000;
+      }
+
+      :host(.noname) .username {
+        display: none;
       }
 
       ${personTemplate}
@@ -131,6 +144,19 @@ class PersonViewer extends HTMLElement {
     person.classList.add(skinName);
   }
 
+  setImage(img) {
+    const image = this.shadowRoot.querySelector(".image");
+    image.insertAdjacentElement("afterbegin", img);
+    setTimeout(() => this.removeImage(), 3000);
+  }
+
+  removeImage() {
+    const img = this.shadowRoot.querySelector(".image img");
+    img.remove();
+    const event = new CustomEvent("USER_GO_HOME", { composed: true, bubbles: true });
+    this.dispatchEvent(event);
+  }
+
   setHeight() {
     const size = 85 + Math.floor(Math.random() * 20);
     this.style.setProperty("--height", `${size}px`);
@@ -139,6 +165,8 @@ class PersonViewer extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = /* html */`
     <style>${PersonViewer.styles}</style>
+    <div class="image">
+    </div>
     <div class="person-container">
       <span class="username">${this.username}</span>
       <div class="person"></div>

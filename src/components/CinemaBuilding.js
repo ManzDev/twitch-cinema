@@ -6,7 +6,7 @@ import "./CinemaTicketStore.js";
 import "./CinemaTop.js";
 import "./SpotLight.js";
 
-const TICKET_DURATION_TIME = 5000;
+const TICKET_DURATION_TIME = 7000;
 
 class CinemaBuilding extends HTMLElement {
   constructor() {
@@ -85,7 +85,7 @@ class CinemaBuilding extends HTMLElement {
 
     finished.then(data => {
       cinemaTicket.remove();
-      const event = new CustomEvent("USER_RANDOM_ACTION", { composed: true, bubbles: true });
+      const event = new CustomEvent("USER_GO_CINEMA", { composed: true, bubbles: true });
       this.dispatchEvent(event);
     });
   }

@@ -514,23 +514,286 @@
 
 /* GariCarandai */
 .invisible-man {
+  width: 40px;
+  height: 84px;
   background:
     linear-gradient(
-      to bottom,
-      transparent 0% 15%,
-      #000 16% 19%,
-      transparent 20% 100%
+      to right,
+      transparent 0 6px,
+      #222 7px 9px,
+      #111 10px 12px,
+      #000 13px 30px,
+      #111 31px 33px,
+      transparent 34px 40px
     ),
     linear-gradient(
       to right,
-      #fff 0% 11%,
-      transparent 12% 88%,
-      #fff 89% 100%
+      transparent 0 6px,
+      #222 7px 9px,
+      #111 10px 12px,
+      #000 13px 30px,
+      #111 31px 33px,
+      transparent 34px 40px
     ),
     linear-gradient(
-      to bottom,
-      #000 0% 15%,
-      transparent 16% 100%
+      to right,
+      transparent 0 6px,
+      #222 7px 9px,
+      #111 10px 12px,
+      #000 13px 30px,
+      #111 31px 33px,
+      transparent 34px 40px
+    ),
+    linear-gradient(
+      to right,
+      transparent 0 6px,
+      #a0a0a0 7px 9px,
+      #909090 10px 12px,
+      #808080 13px 30px,
+      #858585 31px 33px,
+      transparent 34px 40px
+    ),
+    linear-gradient(
+      to right,
+      #222 0 2px,
+      #111 3px 5px,
+      #000 6px 37px,
+      #111 38px 40px
     );
-  mix-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: 40px 4px;
+  background-position: 0 0, 0 4px, 0 8px, 0 12px, 0 16px;
+}
+
+/* Maxi83c */
+.manzdev {
+  width: 40px;
+  height: 84px;
+  background:
+    linear-gradient(
+      to right,
+      transparent 8px,
+      #000 8px 32px,
+      transparent 32px
+    ),
+    linear-gradient(
+      to right,
+      #000 36px,
+      transparent 36px
+    ),
+    linear-gradient(
+      to right,
+      #000 12px,
+      #cc984f 12px 28px,
+      #000 28px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #cc984f 4px 12px,
+      #ffcc80 12px 28px,
+      #1a1a1a 28px 32px,
+      #000 32px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #ffcc80 4px 8px,
+      #000 8px 12px,
+      #ffcc80 12px 20px,
+      #000 20px 24px,
+      #ffcc80 24px 32px,
+      #1a1a1a 32px 36px,
+      #000 36px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #ffcc80 4px 8px,
+      #000 8px 12px,
+      #ffcc80 12px 20px,
+      #000 20px 24px,
+      #ffcc80 24px 32px,
+      #1a1a1a 32px 36px,
+      #000 36px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #ffcc80 4px 8px,
+      #ebb267 8px 20px,
+      #ffcc80 20px 32px,
+      #000 32px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #ffcc80 4px 28px,
+      #cc984f 28px 32px,
+      #000 32px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #ffcc80 4px 8px,
+      #000 8px 16px,
+      #cc984f 16px 28px,
+      #000 28px 36px,
+      transparent 36px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #ffcc80 4px 8px,
+      #000 8px 12px,
+      #cc984f 12px 20px,
+      #000 20px 32px,
+      transparent 32px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #000 4px 28px,
+      #1a1a1a 28px 32px,
+      #000 32px 36px,
+      transparent 36px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #1a1a1a 4px 8px,
+      #000 8px 32px,
+      #1a1a1a 32px 36px,
+      #000 36px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #1a1a1a 4px 8px,
+      #000 8px 16px,
+      #17ffff 16px 20px,
+      #000 20px 32px,
+      #1a1a1a 32px 36px,
+      #000 36px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #1a1a1a 4px 8px,
+      #000 8px 12px,
+      #0d2061 12px 20px,
+      #cc2554 20px 24px,
+      #000 24px 32px,
+      #1a1a1a 32px 36px,
+      #000 36px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #1a1a1a 4px 8px,
+      #000 8px 12px,
+      #17ffff 12px 16px,
+      #e65100 16px 20px,
+      #0d2061 20px 24px,
+      #000 24px 32px,
+      #1a1a1a 32px 36px,
+      #000 36px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #1a1a1a 4px 8px,
+      #000 8px 32px,
+      #ffcc80 32px 36px,
+      #ebb267 36px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #8dbceb 4px 8px,
+      #9cf 8px 28px,
+      #8dbceb 28px 32px,
+      #ffcc80 32px 36px,
+      #ebb267 36px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #8dbceb 4px 8px,
+      #9cf 8px 28px,
+      #8dbceb 28px 32px,
+      transparent 32px
+    ),
+    linear-gradient(
+      to right,
+      transparent 4px,
+      #9cf 4px 12px,
+      #8dbceb 12px 16px,
+      transparent 16px 20px,
+      #8dbceb 20px 24px,
+      #9cf 24px 32px,
+      transparent 32px
+    ),
+    linear-gradient(
+      to right,
+      #000 4px,
+      #1a1a1a 4px 16px,
+      transparent 16px 20px,
+      #1a1a1a 20px 32px,
+      #000 32px 36px,
+      transparent 36px
+    ),
+    linear-gradient(
+      to right,
+      #000 4px 16px,
+      transparent 16px 20px,
+      #000 20px 36px,
+      transparent 36px
+    );
+  background-size: 40px 4px;
+  background-repeat: no-repeat;
+  background-position:
+    0 0,
+    0 4px,
+    0 8px,
+    0 12px,
+    0 16px,
+    0 20px,
+    0 24px,
+    0 28px,
+    0 32px,
+    0 36px,
+    0 40px,
+    0 44px,
+    0 48px,
+    0 52px,
+    0 56px,
+    0 60px,
+    0 64px,
+    0 68px,
+    0 72px,
+    0 76px,
+    0 80px,
+    0 84px;
+  filter:
+    drop-shadow(1px 0 white)
+    drop-shadow(0 1px white)
+    drop-shadow(-1px 0 white)
+    drop-shadow(0 -1px white);
+}
+
+/* Eduardo Enrique */
+.padawanstrainer {
+  width: 30px;
+  height: 85px;
+  background:
+    linear-gradient(
+      to bottom,
+      #a82db6 0% 5%,
+      #fcdcfa 8% 35%,
+      #376a26 35% 60%,
+      #041643 55% 80%,
+      #fcdcfa 85% 96%,
+      #000 97% 98%
+    );
 }
